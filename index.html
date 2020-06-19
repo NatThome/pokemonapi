@@ -1,19 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <title>Document</title>
+  <title>SKY Filmes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="image/favicon.ico"/>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
 
 <body>
-    
-    <div id="card" class="card-deck" style="display: flex; flex-wrap: wrap; justify-content: center;";>
-    </div>
-    <script src="main.js"></script>
-</body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="image/sky-logo.png" width="82px" height="30px" class="d-inline-block align-top" alt="">
+    </a>
+    <li class="nav-item accessibility ml-3 d-none d-md-block">
+      <i class="fas fa-adjust fa-rotate-180"></i>
+    </li>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Entrar</button>
+  </nav>
 
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+        <a class="nav-link active" style="color: #e91313; background-color: #ffffff; font-size: 150%;" href="#">Filmes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: #6c757d; background-color: #ffffff; font-size: 150%;" href="#">Serie</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: #6c757d; background-color: #ffffff; font-size: 150%;" href="#">Canais</a>
+    </li>
+  </ul>
+
+  <div class="jumbotron align-items-center">
+    <div class="container text-center">
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+      </ol>
+      <div id="carousel" class="carousel-inner">
+      </div>
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+  </div>
+
+<!-- <div id="card" class="card-deck" style="display: flex; flex-wrap: wrap; justify-content: center;"></div>  -->
+
+  
+<div class="container-fluid bg-3">    
+  <br>
+  <div class="r" id="card" style="display: flex; flex-wrap: wrap;">
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+    <div style="background-color:#f1f2fa;">
+      <hr>
+      <div class="container">
+  
+        <div class="row py-4 d-flex align-items-center">
+  
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <img src="/image/logoSky.png" width="82px" height="30px" class="d-inline-block align-top" alt="">
+          </div>
+      
+          <div class="col-md-6 col-sm-7 text-center text-md-right">
+  
+            <a class="fb-ic">
+              <img src="/image/face.png">
+            </a>
+            <a class="tw-ic">
+              <img src="/image/twt.png">
+            </a>
+             <a class="yt-ic">
+              <img src="/image/youtube.png">
+            </a>
+            <a class="ins-ic">
+              <img src="/image/insta.png">
+            </a>
+          </div>  
+      <hr>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container text-center text-md-left mt-5">
+  
+      <div class="row mt-3">
+  
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+          <div class = "container">
+          <img class = "appImg" src="src/img/appImg.png">
+          <div class= "font" >
+              <h6>Baixe no seu celular o app Minha SKY e divirta-se.</h6>
+          </div>
+          </div>
+          
+          <hr class="deep-purple accent-2 mr-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+  
+        </div>
+       
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+          <h6 class="text-uppercase font-weight-bold">Sobre</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Nossa Historia</a>
+          </p>
+          <p>
+            <a href="#!">Imprensa</a>
+          </p>
+          <p>
+            <a href="#!">Prêmios e conquistas</a>
+          </p>
+          <p>
+            <a href="#!">Credenciamento</a>
+          </p>
+          <p>
+            <a href="#!">Trabalhe com a gente</a>
+          </p>
+          <p>
+            <a href="#!">Promoção</a>
+          </p>
+          <br></br>
+          <p>
+            <h6 class="text-uppercase font-weight-bold">Ajuda</h6>
+          </p>
+          <p>
+            <a href="#!">Central de ajuda</a>
+          </p>
+          <p>
+            <a href="#!">Manuais</a>
+          </p>
+  
+        </div>
+      
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <h6 class="text-uppercase font-weight-bold">Nossas responsabilidades</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="fas fa-home mr-3">Conselho aos usuários </a></p>
+          <p>
+            <a class="fas fa-envelope mr-3">Pesquisa Anatel</a> </p>
+          <p>
+            <a class="fas fa-phone mr-3"> Relatórios de transparência</a></p>
+          <p>
+            <a class="fas fa-print mr-3">Responsabilidade Social</a> </p>
+          <p>
+            <a class="fas fa-print mr-3">Acessibilidade</a> </p>  
+            <p>
+              <a class="fas fa-print mr-3"></a> </p>  
+          <br></br>
+          <p>
+            <h6 class="text-uppercase font-weight-bold">SKY Empresas</h6>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-copyright text-center py-3" style="background-color:#f1f2fa;">
+      <a>Início  |  Politica de Privacidade  |  Contratos gerais  |  Contratos Pré-pago  |  Cancelamento  |  Ouvidoria  |  Consumidor.gov </a>
+    </div>
+    <div class="footer-copyright text-center py-3" >
+      <a>Todos os direitos reservados 2018. </a>
+    </div>  
+</footer>
+
+  <script src="main.js"></script>
+  <script src="style.css"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 </html>
